@@ -427,6 +427,7 @@
             this.Btn_Amazonas.Text = "Amazonas";
             this.Btn_Amazonas.UseVisualStyleBackColor = true;
             this.Btn_Amazonas.Visible = false;
+            this.Btn_Amazonas.CheckedChanged += new System.EventHandler(this.Btn_Amazonas_CheckedChanged);
             // 
             // Btn_Para
             // 
@@ -439,7 +440,7 @@
             this.Btn_Para.Text = "Pará";
             this.Btn_Para.UseVisualStyleBackColor = true;
             this.Btn_Para.Visible = false;
-            this.Btn_Para.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            this.Btn_Para.CheckedChanged += new System.EventHandler(this.Btn_Para_CheckedChanged);
             // 
             // Btn_Rondonia
             // 

@@ -110,10 +110,7 @@ namespace ProjetoOperadoras
 
 
 
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
@@ -174,6 +171,16 @@ namespace ProjetoOperadoras
         private void Btn_Acre_CheckedChanged(object sender, EventArgs e)
         {
             Pic_Bandeiras.Image = Properties.Resources.ac;
+        }
+
+        private void Btn_Amazonas_CheckedChanged(object sender, EventArgs e)
+        {
+            Pic_Bandeiras.Image = Properties.Resources.am;
+        }
+
+        private void Btn_Para_CheckedChanged(object sender, EventArgs e)
+        {
+            Pic_Bandeiras.Image = Properties.Resources.am;
         }
     }
 }
