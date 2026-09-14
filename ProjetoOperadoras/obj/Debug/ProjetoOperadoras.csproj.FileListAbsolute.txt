@@ -1,0 +1,33 @@
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.exe.config
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.exe
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.pdb
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.AssemblyReference.cache
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.Properties.Resources.resources
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.GenerateResource.cache
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.CoreCompileInputs.cache
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.exe
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.pdb
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.exe.config
+C:\Users\Aloma Barros\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.Frm_01.resources
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.exe.config
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.exe
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.pdb
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.AssemblyReference.cache
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.exe.config
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.Frm_01.resources
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.Properties.Resources.resources
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.GenerateResource.cache
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.CoreCompileInputs.cache
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.exe
+C:\Users\DB\Desktop\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.pdb
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.AssemblyReference.cache
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.exe.config
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.Frm_01.resources
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.Properties.Resources.resources
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.GenerateResource.cache
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.csproj.CoreCompileInputs.cache
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.exe
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\obj\Debug\ProjetoOperadoras.pdb
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.exe.config
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.exe
+C:\Users\Aloma Barros\Documents\ProjetoOperadoras\ProjetoOperadoras\bin\Debug\ProjetoOperadoras.pdb

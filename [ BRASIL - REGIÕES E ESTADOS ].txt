@@ -1,0 +1,38 @@
+[ BRASIL - REGIÕES E ESTADOS ]
+   │
+   ├──► [ NORTE ]
+   │       ├── Acre
+   │       ├── Amapá
+   │       ├── Amazonas
+   │       ├── Pará
+   │       ├── Rondônia
+   │       ├── Roraima
+   │       └── Tocantins
+   │
+   ├──► [ NORDESTE ]
+   │       ├── Alagoas
+   │       ├── Bahia
+   │       ├── Ceará
+   │       ├── Maranhão
+   │       ├── Paraíba
+   │       ├── Pernambuco
+   │       ├── Piauí
+   │       ├── Rio Grande do Norte
+   │       └── Sergipe
+   │
+   ├──► [ CENTRO-OESTE ]
+   │       ├── Distrito Federal
+   │       ├── Goiás
+   │       ├── Mato Grosso
+   │       └── Mato Grosso do Sul
+   │
+   ├──► [ SUDESTE ]
+   │       ├── Espírito Santo
+   │       ├── Minas Gerais
+   │       ├── Rio de Janeiro
+   │       └── São Paulo
+   │
+   └──► [ SUL ]
+           ├── Paraná
+           ├── Rio Grande do Sul
+           └── Santa Catarina
