@@ -124,6 +124,7 @@
             this.Txt_Estado.Name = "Txt_Estado";
             this.Txt_Estado.Size = new System.Drawing.Size(200, 32);
             this.Txt_Estado.TabIndex = 8;
+            this.Txt_Estado.TextChanged += new System.EventHandler(this.Txt_Estado_TextChanged);
             // 
             // Lbl_Estado
             // 
@@ -147,6 +148,7 @@
             this.Txt_DDD.Name = "Txt_DDD";
             this.Txt_DDD.Size = new System.Drawing.Size(131, 32);
             this.Txt_DDD.TabIndex = 6;
+            this.Txt_DDD.TextChanged += new System.EventHandler(this.Txt_DDD_TextChanged);
             // 
             // Lbl_DDD
             // 
@@ -427,7 +429,6 @@
             this.Btn_Amazonas.Text = "Amazonas";
             this.Btn_Amazonas.UseVisualStyleBackColor = true;
             this.Btn_Amazonas.Visible = false;
-            this.Btn_Amazonas.CheckedChanged += new System.EventHandler(this.Btn_Amazonas_CheckedChanged);
             // 
             // Btn_Para
             // 
@@ -440,7 +441,7 @@
             this.Btn_Para.Text = "Pará";
             this.Btn_Para.UseVisualStyleBackColor = true;
             this.Btn_Para.Visible = false;
-            this.Btn_Para.CheckedChanged += new System.EventHandler(this.Btn_Para_CheckedChanged);
+            this.Btn_Para.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // Btn_Rondonia
             // 
@@ -479,7 +480,7 @@
             this.Btn_Acre.Text = "Acre";
             this.Btn_Acre.UseVisualStyleBackColor = true;
             this.Btn_Acre.Visible = false;
-            this.Btn_Acre.CheckedChanged += new System.EventHandler(this.Btn_Acre_CheckedChanged);
+            this.Btn_Acre.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_2);
             // 
             // Pic_Bandeiras
             // 
