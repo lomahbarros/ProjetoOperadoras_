@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Btn_Confirmar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Grp_DadosSelecionados = new System.Windows.Forms.GroupBox();
             this.Txt_Estado = new System.Windows.Forms.TextBox();
@@ -58,12 +59,12 @@
             this.Btn_Rondonia = new System.Windows.Forms.RadioButton();
             this.Btn_Amapa = new System.Windows.Forms.RadioButton();
             this.Btn_Acre = new System.Windows.Forms.RadioButton();
-            this.Pic_Bandeiras = new System.Windows.Forms.PictureBox();
             this.Cmb_regiao_selecionada = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_nomeoperador = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Pic_Bandeiras = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.Grp_DadosSelecionados.SuspendLayout();
@@ -75,9 +76,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.Btn_Confirmar);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.Txt_nomeoperador);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.groupBox1.Location = new System.Drawing.Point(387, 97);
@@ -86,6 +88,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados da Recarga";
+            // 
+            // Btn_Confirmar
+            // 
+            this.Btn_Confirmar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Btn_Confirmar.Location = new System.Drawing.Point(996, 581);
+            this.Btn_Confirmar.Name = "Btn_Confirmar";
+            this.Btn_Confirmar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Confirmar.TabIndex = 1;
+            this.Btn_Confirmar.Text = "Confirmar";
+            this.Btn_Confirmar.UseVisualStyleBackColor = true;
+            this.Btn_Confirmar.Click += new System.EventHandler(this.Btn_Confirmar_Click);
             // 
             // groupBox2
             // 
@@ -482,16 +495,6 @@
             this.Btn_Acre.Visible = false;
             this.Btn_Acre.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_2);
             // 
-            // Pic_Bandeiras
-            // 
-            this.Pic_Bandeiras.Location = new System.Drawing.Point(194, 19);
-            this.Pic_Bandeiras.Name = "Pic_Bandeiras";
-            this.Pic_Bandeiras.Size = new System.Drawing.Size(314, 204);
-            this.Pic_Bandeiras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pic_Bandeiras.TabIndex = 4;
-            this.Pic_Bandeiras.TabStop = false;
-            this.Pic_Bandeiras.Click += new System.EventHandler(this.Pic_Bandeiras_Click);
-            // 
             // Cmb_regiao_selecionada
             // 
             this.Cmb_regiao_selecionada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -508,22 +511,12 @@
             this.Cmb_regiao_selecionada.TabIndex = 0;
             this.Cmb_regiao_selecionada.SelectedIndexChanged += new System.EventHandler(this.Cmb_regiao_selecionada_SelectedIndexChanged);
             // 
-            // pictureBox1
+            // Txt_nomeoperador
             // 
-            this.pictureBox1.Image = global::ProjetoOperadoras.Properties.Resources.aquitem;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 509);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(76, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.Txt_nomeoperador.Location = new System.Drawing.Point(76, 19);
+            this.Txt_nomeoperador.Name = "Txt_nomeoperador";
+            this.Txt_nomeoperador.Size = new System.Drawing.Size(100, 20);
+            this.Txt_nomeoperador.TabIndex = 1;
             // 
             // label1
             // 
@@ -534,6 +527,26 @@
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
+            // 
+            // Pic_Bandeiras
+            // 
+            this.Pic_Bandeiras.Location = new System.Drawing.Point(194, 19);
+            this.Pic_Bandeiras.Name = "Pic_Bandeiras";
+            this.Pic_Bandeiras.Size = new System.Drawing.Size(314, 204);
+            this.Pic_Bandeiras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Bandeiras.TabIndex = 4;
+            this.Pic_Bandeiras.TabStop = false;
+            this.Pic_Bandeiras.Click += new System.EventHandler(this.Pic_Bandeiras_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProjetoOperadoras.Properties.Resources.aquitem;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(208, 509);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_01
             // 
@@ -567,7 +580,7 @@
         private System.Windows.Forms.PictureBox Pic_Bandeiras;
         private System.Windows.Forms.ComboBox Cmb_regiao_selecionada;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_nomeoperador;
         private System.Windows.Forms.Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.RadioButton Btn_Amazonas;
@@ -595,6 +608,7 @@
         private System.Windows.Forms.Label Lbl_Estado;
         private System.Windows.Forms.TextBox Txt_DDD;
         private System.Windows.Forms.Label Lbl_DDD;
+        private System.Windows.Forms.Button Btn_Confirmar;
     }
 }
 

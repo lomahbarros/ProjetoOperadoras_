@@ -1,0 +1,5 @@
+
+button.Image	Define uma imagem dentro de um botão.
+button.BackgroundImage	Define uma imagem como fundo do botão.
+button.BackgroundImageLayout = ImageLayout.Stretch	Faz a imagem ocupar todo o botão.
+PictureBox.Click	Permite usar uma imagem (PictureBox) como botão, disparando ações no evento Click.

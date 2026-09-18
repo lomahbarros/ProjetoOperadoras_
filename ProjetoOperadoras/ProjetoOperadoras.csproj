@@ -52,10 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +184,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo_transp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\claro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recargadecell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.oi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.oi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

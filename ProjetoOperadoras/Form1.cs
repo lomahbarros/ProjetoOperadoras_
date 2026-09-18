@@ -199,5 +199,17 @@ namespace ProjetoOperadoras
         {
 
         }
+
+        private void Btn_Confirmar_Click(object sender, EventArgs e)
+        {
+            Frm_02 Chametela02 = new Frm_02(); // instanciar o objeto para chamar a tela02
+            Chametela02.Show();
+            Hide();
+            Chametela02.BackgroundImage = Properties.Resources.Fundo_transp;
+            Chametela02.BackgroundImageLayout = ImageLayout.Stretch;
+            Chametela02.Lbl_nomedooperadortela02.Text = Txt_nomeoperador.Text;
+            Chametela02.Txt_regiaoselecionada.Text = Txt_regiao_selecionada.Text;
+            Chametela02.Txt_DDD.Text=Txt_DDD.Text;
+                }
     }
 }
