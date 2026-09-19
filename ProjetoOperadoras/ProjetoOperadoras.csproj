@@ -305,5 +305,38 @@
   <ItemGroup>
     <None Include="Resources\200.oi.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recargadecell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bemvindo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moeda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dim1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dim2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Escolha a operadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem fundo claro %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem fundo vivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem fundo tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem fundo oi.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,18 @@ namespace ProjetoOperadoras
     {
         // Campo da classe para guardar o botão escolhido
         private Button botaoSelecionado;
+
+        private void CopiarPropriedades(Button origem, Button destino)
+        {
+            destino.Text = origem.Text;
+            destino.BackgroundImage = origem.BackgroundImage;
+            destino.BackgroundImageLayout = origem.BackgroundImageLayout;
+            destino.ForeColor = origem.ForeColor;
+            destino.Font = origem.Font;
+            destino.Size = origem.Size;
+        }
+
+
         public Frm_02()
         {
             InitializeComponent();
@@ -140,7 +152,9 @@ namespace ProjetoOperadoras
             if (botaoSelecionado != null)
             {
              Frm_03 Chametela03 = new Frm_03(); // Instancia
-             Chametela03.Show();           
+             Chametela03.Show();
+            
+
              //Copia a imagem do botão selecionado para o botão da tela 03
              Chametela03.Btn_ima_tema03.BackgroundImage = botaoSelecionado.BackgroundImage;
              Chametela03.Btn_ima_tema03.BackgroundImageLayout = ImageLayout.Stretch;
@@ -152,6 +166,8 @@ namespace ProjetoOperadoras
                 MessageBox.Show("Selecione um botão antes de confirmar!");
             }
         }
+
+        
         private void Btn_recarga15_Click(object sender, EventArgs e)
         {
             botaoSelecionado = (Button)sender; // guarda o botão clicado
@@ -185,6 +201,11 @@ namespace ProjetoOperadoras
         private void Btn_recarga200_Click(object sender, EventArgs e)
         {
             botaoSelecionado = (Button)sender; // guarda o botão clicado
+        }
+
+        private void Lbl_Operadoraselecionada_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

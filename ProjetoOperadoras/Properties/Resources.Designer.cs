@@ -443,6 +443,16 @@ namespace ProjetoOperadoras.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bemvindo {
+            get {
+                object obj = ResourceManager.GetObject("bemvindo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ce {
             get {
                 object obj = ResourceManager.GetObject("ce", resourceCulture);
@@ -483,9 +493,39 @@ namespace ProjetoOperadoras.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dim1 {
+            get {
+                object obj = ResourceManager.GetObject("Dim1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dim2 {
+            get {
+                object obj = ResourceManager.GetObject("Dim2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap es {
             get {
                 object obj = ResourceManager.GetObject("es", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Escolha_a_operadora {
+            get {
+                object obj = ResourceManager.GetObject("Escolha a operadora", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +566,16 @@ namespace ProjetoOperadoras.Properties {
         internal static System.Drawing.Bitmap mg {
             get {
                 object obj = ResourceManager.GetObject("mg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moeda {
+            get {
+                object obj = ResourceManager.GetObject("moeda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -623,6 +673,16 @@ namespace ProjetoOperadoras.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap real1 {
+            get {
+                object obj = ResourceManager.GetObject("real1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap recargadecell {
             get {
                 object obj = ResourceManager.GetObject("recargadecell", resourceCulture);
@@ -696,6 +756,46 @@ namespace ProjetoOperadoras.Properties {
         internal static System.Drawing.Bitmap se {
             get {
                 object obj = ResourceManager.GetObject("se", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sem_fundo_claro__1_ {
+            get {
+                object obj = ResourceManager.GetObject("sem fundo claro (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sem_fundo_oi {
+            get {
+                object obj = ResourceManager.GetObject("sem fundo oi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sem_fundo_tim {
+            get {
+                object obj = ResourceManager.GetObject("sem fundo tim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sem_fundo_vivo {
+            get {
+                object obj = ResourceManager.GetObject("sem fundo vivo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

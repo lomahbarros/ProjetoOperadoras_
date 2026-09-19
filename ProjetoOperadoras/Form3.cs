@@ -23,5 +23,10 @@ namespace ProjetoOperadoras
             Chametela02.Show();
             this.Close();
         }
+
+        private void Btn_tela03_recebe_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

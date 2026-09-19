@@ -201,15 +201,50 @@ namespace ProjetoOperadoras
         }
 
         private void Btn_Confirmar_Click(object sender, EventArgs e)
-        {
-            Frm_02 Chametela02 = new Frm_02(); // instanciar o objeto para chamar a tela02
-            Chametela02.Show();
-            Hide();
-            Chametela02.BackgroundImage = Properties.Resources.Fundo_transp;
-            Chametela02.BackgroundImageLayout = ImageLayout.Stretch;
-            Chametela02.Lbl_nomedooperadortela02.Text = Txt_nomeoperador.Text;
-            Chametela02.Txt_regiaoselecionada.Text = Txt_regiao_selecionada.Text;
-            Chametela02.Txt_DDD.Text=Txt_DDD.Text;
-                }
+        {         
+
+            bool camposValidos = true;
+
+            // Verifica o primeiro TextBox
+            if (string.IsNullOrWhiteSpace(Txt_nomeoperador.Text))
+            {
+                Txt_nomeoperador.BackColor = Color.LightCoral; // destaca em vermelho
+                camposValidos = false;
+            }
+            else
+            {
+                Txt_nomeoperador.BackColor = Color.White; // volta ao normal
+            }
+
+            // Verifica o segundo TextBox
+            if (string.IsNullOrWhiteSpace(Cmb_regiao_selecionada.Text))
+            {
+                Cmb_regiao_selecionada.BackColor = Color.LightCoral;
+                camposValidos = false;
+            }
+            else
+            {
+                Cmb_regiao_selecionada.BackColor = Color.White;
+            }
+
+            // Se ambos estão válidos, abre a tela 02
+            if (camposValidos)
+            {
+                Frm_02 Chametela02 = new Frm_02(); // instanciar o objeto para chamar a tela02
+                Chametela02.Show();
+                Hide();
+                Chametela02.BackgroundImage = Properties.Resources.Fundo_transp;
+                Chametela02.BackgroundImageLayout = ImageLayout.Stretch;
+                Chametela02.Lbl_nomedooperadortela02.Text = Txt_nomeoperador.Text;
+                Chametela02.Txt_regiaoselecionada.Text = Txt_regiao_selecionada.Text;
+                Chametela02.Txt_DDD.Text = Txt_DDD.Text;
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos destacados antes de continuar!");
+            }
+        }
+
     }
 }
+
