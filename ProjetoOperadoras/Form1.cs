@@ -18,6 +18,8 @@ namespace ProjetoOperadoras
             InitializeComponent();
         }
 
+        string regiao_selecionada; // Declarando uma variavel para receber a região selecionada
+
         private void Form1_Load(object sender, EventArgs e)
         {
             BackgroundImage = Properties.Resources.tema01;
@@ -124,10 +126,7 @@ namespace ProjetoOperadoras
 
         }
 
-        private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
-        {
 
-        }
 
         private void radioButton1_CheckedChanged_3(object sender, EventArgs e)
         {
@@ -141,9 +140,20 @@ namespace ProjetoOperadoras
 
         private void Btn_EspiritoSanto_CheckedChanged(object sender, EventArgs e)
         {
+            
+
+
             Pic_Bandeiras.Image = Properties.Resources.es;
             Txt_Estado.Text = Btn_EspiritoSanto.Text;
-            
+            regiao_selecionada = Btn_EspiritoSanto.Text; // A variável criada recebe a informação do texto 
+           
+
+            if (Btn_EspiritoSanto.Checked == true)
+            {
+                MessageBox.Show(regiao_selecionada, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
         }
 
         private void Pic_Bandeiras_Click(object sender, EventArgs e)
@@ -153,8 +163,18 @@ namespace ProjetoOperadoras
 
         private void Btn_MinasGerais_CheckedChanged(object sender, EventArgs e)
         {
+                     
+
+
             Pic_Bandeiras.Image = Properties.Resources.mg;
             Txt_Estado.Text = Btn_MinasGerais.Text;
+            regiao_selecionada = Btn_MinasGerais.Text; // A variável criada recebe a informação do texto
+            
+
+            if (Btn_MinasGerais.Checked == true)
+            {
+                MessageBox.Show(regiao_selecionada, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -168,15 +188,33 @@ namespace ProjetoOperadoras
         }
 
         private void Btn_RioJaneiro_CheckedChanged(object sender, EventArgs e)
-        {
+        {         
+
+
             Pic_Bandeiras.Image = Properties.Resources.rj;
-            Txt_Estado.Text = Btn_RioJaneiro.Text;
+           Txt_Estado.Text = Btn_RioJaneiro.Text;
+            regiao_selecionada = Btn_RioJaneiro.Text;
+            
+
+            if (Btn_RioJaneiro.Checked == true)
+            {
+                MessageBox.Show(regiao_selecionada, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Btn_SaoPaulo_CheckedChanged(object sender, EventArgs e)
         {
+            
+
             Pic_Bandeiras.Image = Properties.Resources.sp;
             Txt_Estado.Text = Btn_SaoPaulo.Text;
+            regiao_selecionada = Btn_SaoPaulo.Text;
+
+            if (Btn_SaoPaulo.Checked == true)
+            {
+                MessageBox.Show(regiao_selecionada, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void Txt_Estado_TextChanged(object sender, EventArgs e)
@@ -200,23 +238,19 @@ namespace ProjetoOperadoras
 
         }
 
+        bool camposValidos = true;
         private void Btn_Confirmar_Click(object sender, EventArgs e)
-        {         
-
-            bool camposValidos = true;
-
-            // Verifica o primeiro TextBox
+        {
             if (string.IsNullOrWhiteSpace(Txt_nomeoperador.Text))
             {
-                Txt_nomeoperador.BackColor = Color.LightCoral; // destaca em vermelho
+                Txt_nomeoperador.BackColor = Color.LightCoral;
                 camposValidos = false;
             }
             else
             {
-                Txt_nomeoperador.BackColor = Color.White; // volta ao normal
+                Txt_nomeoperador.BackColor = Color.White;
             }
 
-            // Verifica o segundo TextBox
             if (string.IsNullOrWhiteSpace(Cmb_regiao_selecionada.Text))
             {
                 Cmb_regiao_selecionada.BackColor = Color.LightCoral;
@@ -227,24 +261,63 @@ namespace ProjetoOperadoras
                 Cmb_regiao_selecionada.BackColor = Color.White;
             }
 
-            // Se ambos estão válidos, abre a tela 02
-            if (camposValidos)
+            if (Btn_EspiritoSanto.Checked || Btn_MinasGerais.Checked
+                || Btn_RioJaneiro.Checked || Btn_SaoPaulo.Checked)
             {
-                Frm_02 Chametela02 = new Frm_02(); // instanciar o objeto para chamar a tela02
-                Chametela02.Show();
-                Hide();
-                Chametela02.BackgroundImage = Properties.Resources.Fundo_transp;
-                Chametela02.BackgroundImageLayout = ImageLayout.Stretch;
-                Chametela02.Lbl_nomedooperadortela02.Text = Txt_nomeoperador.Text;
-                Chametela02.Txt_regiaoselecionada.Text = Txt_regiao_selecionada.Text;
-                Chametela02.Txt_DDD.Text = Txt_DDD.Text;
+                if (camposValidos)
+                {
+                    Frm_02 Chametela02 = new Frm_02();
+                    Chametela02.Show();
+                    Hide();
+                    Chametela02.BackgroundImage = Properties.Resources.Fundo_transp;
+                    Chametela02.BackgroundImageLayout = ImageLayout.Stretch;
+                    Chametela02.Lbl_nomedooperadortela02.Text = Txt_nomeoperador.Text;
+                    Chametela02.Txt_regiaoselecionada.Text = Txt_regiao_selecionada.Text;
+                    Chametela02.Txt_DDD.Text = Txt_DDD.Text;
+                }
+                else
+                {
+                    MessageBox.Show("Preencha todos os campos destacados antes de continuar!");
+                }
             }
             else
             {
-                MessageBox.Show("Preencha todos os campos destacados antes de continuar!");
+                MessageBox.Show("Selecione uma região!", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+            
+
+        private void Txt_nomeoperador_TextChanged(object sender, EventArgs e)
+        {
+            Txt_nomeoperador.Text = Txt_nomeoperador.Text.TrimStart(); // Retirar os espaços iniciais a esquerda
+            Lbl_caracters.Text = (Txt_nomeoperador.MaxLength - Txt_nomeoperador.TextLength).ToString() + " Caracters restante"; // contar a caracters máximo, menos o tamanho do nome, e converter para srt e formatar a saida da frase
+
+            if (Txt_nomeoperador.TextLength >= 2) //21-	Bloquear para quando digitar o nome o botão vai aparecer, a condição é digitar pelo menos 2 letras 
+            {
+                Btn_Confirmar.Visible = true;
+
+            }
+            else
+            {
+                Btn_Confirmar.Visible = false;
             }
         }
 
+        private void Txt_nomeoperador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && !char.IsControl(e.KeyChar)) // Condição para verificar se digitou somente letras,espaços && as teclas de controle 
+            {
+                e.Handled = true; // verificando se o texto guardado em e.KeyChar é letra
+
+                MessageBox.Show("Digite somente letras!","ATENÇÃO",MessageBoxButtons.OK, MessageBoxIcon.Error); // Configuração da caixa de erro
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

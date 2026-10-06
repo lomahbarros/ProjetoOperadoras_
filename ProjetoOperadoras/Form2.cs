@@ -12,7 +12,8 @@ using System.Windows.Forms;
 namespace ProjetoOperadoras
 {
     public partial class Frm_02 : Form
-    {
+    { // Criar uma variavel para guardar a informacao do botão selecionado para envio tela 03 
+        string operadoraSelecionada = "";
         // Campo da classe para guardar o botão escolhido
         private Button botaoSelecionado;
 
@@ -60,6 +61,9 @@ namespace ProjetoOperadoras
             Btn_recarga200.BackgroundImageLayout = ImageLayout.Stretch;
 
             Txt_operadoraselecionada.Text = Btn_tela02_Claro.Text;
+
+            Msk_cel.Enabled = true;
+            operadoraSelecionada = "Claro";
         }
 
         private void Btn_tela02_Vivo_CheckedChanged(object sender, EventArgs e)
@@ -85,6 +89,9 @@ namespace ProjetoOperadoras
             Btn_recarga200.BackgroundImageLayout = ImageLayout.Stretch;
 
             Txt_operadoraselecionada.Text = Btn_tela02_Vivo.Text;
+
+            Msk_cel.Enabled = true;
+            operadoraSelecionada = "Vivo";
         }
 
         private void Btn_tela02_Tim_CheckedChanged(object sender, EventArgs e)
@@ -110,6 +117,9 @@ namespace ProjetoOperadoras
             Btn_recarga200.BackgroundImageLayout = ImageLayout.Stretch;
 
             Txt_operadoraselecionada.Text = Btn_tela02_Tim.Text;
+
+            Msk_cel.Enabled = true;
+            operadoraSelecionada = "Tim";
         }
 
         private void Btn_tela02_Oi_CheckedChanged(object sender, EventArgs e)
@@ -135,6 +145,9 @@ namespace ProjetoOperadoras
             Btn_recarga200.BackgroundImageLayout = ImageLayout.Stretch;
 
             Txt_operadoraselecionada.Text = Btn_tela02_Oi.Text;
+
+            Msk_cel.Enabled = true;
+            operadoraSelecionada = "Oi";
         }
 
         private void Btn_recarga01_Click(object sender, EventArgs e)
@@ -152,19 +165,32 @@ namespace ProjetoOperadoras
             if (botaoSelecionado != null)
             {
              Frm_03 Chametela03 = new Frm_03(); // Instancia
-             Chametela03.Show();
+                
+
+
+                Chametela03.Show();
             
 
              //Copia a imagem do botão selecionado para o botão da tela 03
              Chametela03.Btn_ima_tema03.BackgroundImage = botaoSelecionado.BackgroundImage;
              Chametela03.Btn_ima_tema03.BackgroundImageLayout = ImageLayout.Stretch;
-                Chametela03.Lbl_linhatxt.Text = Txt_DDD.Text + " - " + Msk_cel.Text;
-             Hide();
+             Chametela03.Lbl_linhatxt.Text = Txt_DDD.Text + " - " + Msk_cel.Text;
+             Chametela03.Lbl_recebeoperadora.Text = operadoraSelecionada;
+                if (Chametela03.Lbl_recebeoperadora.Text == "Oi")
+                    Chametela03.Lbl_recebeoperadora.ForeColor = Color.Orange;
+                else if (Chametela03.Lbl_recebeoperadora.Text == "Vivo")
+                    Chametela03.Lbl_recebeoperadora.ForeColor = Color.DarkViolet;
+                else if (Chametela03.Lbl_recebeoperadora.Text == "Claro")
+                    Chametela03.Lbl_recebeoperadora.ForeColor = Color.Red;
+                else
+                Chametela03.Lbl_recebeoperadora.ForeColor = Color.Blue;
+                Hide();
             }
             else
             {
                 MessageBox.Show("Selecione um botão antes de confirmar!");
             }
+            
         }
 
         
@@ -204,6 +230,11 @@ namespace ProjetoOperadoras
         }
 
         private void Lbl_Operadoraselecionada_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Frm_02_Load(object sender, EventArgs e)
         {
 
         }

@@ -28,5 +28,27 @@ namespace ProjetoOperadoras
         {
 
         }
+
+        private void Lbl_recebeoperadora_Click(object sender, EventArgs e)
+        {
+
+         
+        }
+
+        private void Lbl_txtdaoperadora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_novocliente_Click(object sender, EventArgs e)
+        {
+            Frm_01 tela01 = new Frm_01(); // (Certifique-se de que o nome da classe da sua tela 1 é Frm_01)
+
+            // 2. Mostra a Tela 01
+            tela01.Show();
+
+            // 3. Fecha ou esconde a Tela 03 atual
+            this.Close(); // ou this.Hide(); se preferir apenas oculta
+        }
     }
 }
