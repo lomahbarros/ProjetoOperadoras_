@@ -43,6 +43,15 @@
             this.Grp_tela02_geral = new System.Windows.Forms.GroupBox();
             this.Btn_conf_tema02 = new System.Windows.Forms.Button();
             this.Grp_tela02_selecionarrecarga = new System.Windows.Forms.GroupBox();
+            this.Btn_recarga200 = new System.Windows.Forms.Button();
+            this.Btn_recarga100 = new System.Windows.Forms.Button();
+            this.Btn_recarga40 = new System.Windows.Forms.Button();
+            this.Btn_recarga35 = new System.Windows.Forms.Button();
+            this.Btn_recarga30 = new System.Windows.Forms.Button();
+            this.Btn_recarga20 = new System.Windows.Forms.Button();
+            this.Btn_recarga15 = new System.Windows.Forms.Button();
+            this.Btn_recarga12 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Msk_cel = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Txt_DDD = new System.Windows.Forms.TextBox();
@@ -53,30 +62,23 @@
             this.Lbl_regiao = new System.Windows.Forms.Label();
             this.Lbl_nomedooperadortela02 = new System.Windows.Forms.Label();
             this.Grp_tela02_operadoras = new System.Windows.Forms.GroupBox();
-            this.Btn_recarga200 = new System.Windows.Forms.Button();
-            this.Btn_recarga100 = new System.Windows.Forms.Button();
-            this.Btn_recarga40 = new System.Windows.Forms.Button();
-            this.Btn_recarga35 = new System.Windows.Forms.Button();
-            this.Btn_recarga30 = new System.Windows.Forms.Button();
-            this.Btn_recarga20 = new System.Windows.Forms.Button();
-            this.Btn_recarga15 = new System.Windows.Forms.Button();
-            this.Btn_recarga12 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_tela02_Oi = new System.Windows.Forms.RadioButton();
             this.Btn_tela02_Tim = new System.Windows.Forms.RadioButton();
             this.Btn_tela02_Vivo = new System.Windows.Forms.RadioButton();
             this.Btn_tela02_Claro = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_fechartela02 = new System.Windows.Forms.Button();
             this.Grp_tela02_geral.SuspendLayout();
             this.Grp_tela02_selecionarrecarga.SuspendLayout();
-            this.Grp_tela02_operadoras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Grp_tela02_operadoras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Grp_tela02_geral
             // 
             this.Grp_tela02_geral.BackColor = System.Drawing.Color.Transparent;
+            this.Grp_tela02_geral.Controls.Add(this.Btn_fechartela02);
             this.Grp_tela02_geral.Controls.Add(this.Btn_conf_tema02);
             this.Grp_tela02_geral.Controls.Add(this.Grp_tela02_selecionarrecarga);
             this.Grp_tela02_geral.Controls.Add(this.pictureBox1);
@@ -129,104 +131,6 @@
             this.Grp_tela02_selecionarrecarga.TabIndex = 31;
             this.Grp_tela02_selecionarrecarga.TabStop = false;
             this.Grp_tela02_selecionarrecarga.Text = "Selecione o Valor da Recarga";
-            // 
-            // Msk_cel
-            // 
-            this.Msk_cel.Location = new System.Drawing.Point(464, 195);
-            this.Msk_cel.Mask = "(0) 0000-0000 ";
-            this.Msk_cel.Name = "Msk_cel";
-            this.Msk_cel.Size = new System.Drawing.Size(122, 25);
-            this.Msk_cel.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(465, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Número do Celular";
-            // 
-            // Txt_DDD
-            // 
-            this.Txt_DDD.Enabled = false;
-            this.Txt_DDD.Location = new System.Drawing.Point(302, 195);
-            this.Txt_DDD.Name = "Txt_DDD";
-            this.Txt_DDD.Size = new System.Drawing.Size(100, 25);
-            this.Txt_DDD.TabIndex = 9;
-            // 
-            // Lbl_DDD
-            // 
-            this.Lbl_DDD.AutoSize = true;
-            this.Lbl_DDD.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_DDD.Location = new System.Drawing.Point(326, 172);
-            this.Lbl_DDD.Name = "Lbl_DDD";
-            this.Lbl_DDD.Size = new System.Drawing.Size(36, 20);
-            this.Lbl_DDD.TabIndex = 8;
-            this.Lbl_DDD.Text = "DDD";
-            // 
-            // Txt_operadoraselecionada
-            // 
-            this.Txt_operadoraselecionada.Enabled = false;
-            this.Txt_operadoraselecionada.Location = new System.Drawing.Point(464, 124);
-            this.Txt_operadoraselecionada.Name = "Txt_operadoraselecionada";
-            this.Txt_operadoraselecionada.Size = new System.Drawing.Size(154, 25);
-            this.Txt_operadoraselecionada.TabIndex = 7;
-            // 
-            // Txt_regiaoselecionada
-            // 
-            this.Txt_regiaoselecionada.Enabled = false;
-            this.Txt_regiaoselecionada.Location = new System.Drawing.Point(302, 124);
-            this.Txt_regiaoselecionada.Name = "Txt_regiaoselecionada";
-            this.Txt_regiaoselecionada.Size = new System.Drawing.Size(100, 25);
-            this.Txt_regiaoselecionada.TabIndex = 6;
-            // 
-            // Lbl_Operadoraselecionada
-            // 
-            this.Lbl_Operadoraselecionada.AutoSize = true;
-            this.Lbl_Operadoraselecionada.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Operadoraselecionada.Location = new System.Drawing.Point(459, 105);
-            this.Lbl_Operadoraselecionada.Name = "Lbl_Operadoraselecionada";
-            this.Lbl_Operadoraselecionada.Size = new System.Drawing.Size(152, 20);
-            this.Lbl_Operadoraselecionada.TabIndex = 5;
-            this.Lbl_Operadoraselecionada.Text = "Operadora Selecionada";
-            this.Lbl_Operadoraselecionada.Click += new System.EventHandler(this.Lbl_Operadoraselecionada_Click);
-            // 
-            // Lbl_regiao
-            // 
-            this.Lbl_regiao.AutoSize = true;
-            this.Lbl_regiao.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_regiao.Location = new System.Drawing.Point(326, 105);
-            this.Lbl_regiao.Name = "Lbl_regiao";
-            this.Lbl_regiao.Size = new System.Drawing.Size(52, 20);
-            this.Lbl_regiao.TabIndex = 4;
-            this.Lbl_regiao.Text = "Região";
-            // 
-            // Lbl_nomedooperadortela02
-            // 
-            this.Lbl_nomedooperadortela02.AutoSize = true;
-            this.Lbl_nomedooperadortela02.Font = new System.Drawing.Font("Leelawadee", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_nomedooperadortela02.ForeColor = System.Drawing.Color.Black;
-            this.Lbl_nomedooperadortela02.Location = new System.Drawing.Point(802, 90);
-            this.Lbl_nomedooperadortela02.Name = "Lbl_nomedooperadortela02";
-            this.Lbl_nomedooperadortela02.Size = new System.Drawing.Size(195, 39);
-            this.Lbl_nomedooperadortela02.TabIndex = 3;
-            this.Lbl_nomedooperadortela02.Text = "nomerecebe";
-            this.Lbl_nomedooperadortela02.Click += new System.EventHandler(this.Lbl_nomedooperadortela02_Click);
-            // 
-            // Grp_tela02_operadoras
-            // 
-            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Oi);
-            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Tim);
-            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Vivo);
-            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Claro);
-            this.Grp_tela02_operadoras.Location = new System.Drawing.Point(22, 31);
-            this.Grp_tela02_operadoras.Name = "Grp_tela02_operadoras";
-            this.Grp_tela02_operadoras.Size = new System.Drawing.Size(199, 242);
-            this.Grp_tela02_operadoras.TabIndex = 1;
-            this.Grp_tela02_operadoras.TabStop = false;
-            this.Grp_tela02_operadoras.Text = "Operadoras";
             // 
             // Btn_recarga200
             // 
@@ -335,6 +239,105 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
+            // Msk_cel
+            // 
+            this.Msk_cel.Enabled = false;
+            this.Msk_cel.Location = new System.Drawing.Point(464, 195);
+            this.Msk_cel.Mask = "(0) 0000-0000 ";
+            this.Msk_cel.Name = "Msk_cel";
+            this.Msk_cel.Size = new System.Drawing.Size(172, 25);
+            this.Msk_cel.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(465, 172);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Número do Celular";
+            // 
+            // Txt_DDD
+            // 
+            this.Txt_DDD.Enabled = false;
+            this.Txt_DDD.Location = new System.Drawing.Point(302, 195);
+            this.Txt_DDD.Name = "Txt_DDD";
+            this.Txt_DDD.Size = new System.Drawing.Size(100, 25);
+            this.Txt_DDD.TabIndex = 9;
+            // 
+            // Lbl_DDD
+            // 
+            this.Lbl_DDD.AutoSize = true;
+            this.Lbl_DDD.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_DDD.Location = new System.Drawing.Point(326, 172);
+            this.Lbl_DDD.Name = "Lbl_DDD";
+            this.Lbl_DDD.Size = new System.Drawing.Size(36, 20);
+            this.Lbl_DDD.TabIndex = 8;
+            this.Lbl_DDD.Text = "DDD";
+            // 
+            // Txt_operadoraselecionada
+            // 
+            this.Txt_operadoraselecionada.Enabled = false;
+            this.Txt_operadoraselecionada.Location = new System.Drawing.Point(464, 124);
+            this.Txt_operadoraselecionada.Name = "Txt_operadoraselecionada";
+            this.Txt_operadoraselecionada.Size = new System.Drawing.Size(154, 25);
+            this.Txt_operadoraselecionada.TabIndex = 7;
+            // 
+            // Txt_regiaoselecionada
+            // 
+            this.Txt_regiaoselecionada.Enabled = false;
+            this.Txt_regiaoselecionada.Location = new System.Drawing.Point(302, 124);
+            this.Txt_regiaoselecionada.Name = "Txt_regiaoselecionada";
+            this.Txt_regiaoselecionada.Size = new System.Drawing.Size(100, 25);
+            this.Txt_regiaoselecionada.TabIndex = 6;
+            // 
+            // Lbl_Operadoraselecionada
+            // 
+            this.Lbl_Operadoraselecionada.AutoSize = true;
+            this.Lbl_Operadoraselecionada.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Operadoraselecionada.Location = new System.Drawing.Point(459, 105);
+            this.Lbl_Operadoraselecionada.Name = "Lbl_Operadoraselecionada";
+            this.Lbl_Operadoraselecionada.Size = new System.Drawing.Size(152, 20);
+            this.Lbl_Operadoraselecionada.TabIndex = 5;
+            this.Lbl_Operadoraselecionada.Text = "Operadora Selecionada";
+            this.Lbl_Operadoraselecionada.Click += new System.EventHandler(this.Lbl_Operadoraselecionada_Click);
+            // 
+            // Lbl_regiao
+            // 
+            this.Lbl_regiao.AutoSize = true;
+            this.Lbl_regiao.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_regiao.Location = new System.Drawing.Point(326, 105);
+            this.Lbl_regiao.Name = "Lbl_regiao";
+            this.Lbl_regiao.Size = new System.Drawing.Size(52, 20);
+            this.Lbl_regiao.TabIndex = 4;
+            this.Lbl_regiao.Text = "Região";
+            // 
+            // Lbl_nomedooperadortela02
+            // 
+            this.Lbl_nomedooperadortela02.AutoSize = true;
+            this.Lbl_nomedooperadortela02.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_nomedooperadortela02.ForeColor = System.Drawing.Color.Black;
+            this.Lbl_nomedooperadortela02.Location = new System.Drawing.Point(802, 90);
+            this.Lbl_nomedooperadortela02.Name = "Lbl_nomedooperadortela02";
+            this.Lbl_nomedooperadortela02.Size = new System.Drawing.Size(193, 37);
+            this.Lbl_nomedooperadortela02.TabIndex = 3;
+            this.Lbl_nomedooperadortela02.Text = "nomerecebe";
+            this.Lbl_nomedooperadortela02.Click += new System.EventHandler(this.Lbl_nomedooperadortela02_Click);
+            // 
+            // Grp_tela02_operadoras
+            // 
+            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Oi);
+            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Tim);
+            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Vivo);
+            this.Grp_tela02_operadoras.Controls.Add(this.Btn_tela02_Claro);
+            this.Grp_tela02_operadoras.Location = new System.Drawing.Point(22, 31);
+            this.Grp_tela02_operadoras.Name = "Grp_tela02_operadoras";
+            this.Grp_tela02_operadoras.Size = new System.Drawing.Size(199, 242);
+            this.Grp_tela02_operadoras.TabIndex = 1;
+            this.Grp_tela02_operadoras.TabStop = false;
+            this.Grp_tela02_operadoras.Text = "Operadoras";
+            // 
             // Btn_tela02_Oi
             // 
             this.Btn_tela02_Oi.AutoSize = true;
@@ -401,6 +404,16 @@
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             // 
+            // Btn_fechartela02
+            // 
+            this.Btn_fechartela02.Location = new System.Drawing.Point(984, 148);
+            this.Btn_fechartela02.Name = "Btn_fechartela02";
+            this.Btn_fechartela02.Size = new System.Drawing.Size(75, 23);
+            this.Btn_fechartela02.TabIndex = 1;
+            this.Btn_fechartela02.Text = "X";
+            this.Btn_fechartela02.UseVisualStyleBackColor = true;
+            this.Btn_fechartela02.Click += new System.EventHandler(this.Btn_fechartela02_Click);
+            // 
             // Frm_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,13 +421,15 @@
             this.ClientSize = new System.Drawing.Size(1128, 584);
             this.Controls.Add(this.Grp_tela02_geral);
             this.Name = "Frm_02";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastre a Recarga";
+            this.Load += new System.EventHandler(this.Frm_02_Load);
             this.Grp_tela02_geral.ResumeLayout(false);
             this.Grp_tela02_geral.PerformLayout();
             this.Grp_tela02_selecionarrecarga.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Grp_tela02_operadoras.ResumeLayout(false);
             this.Grp_tela02_operadoras.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -460,5 +475,6 @@
         public System.Windows.Forms.Button Btn_recarga15;
         private System.Windows.Forms.Button Btn_conf_tema02;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Btn_fechartela02;
     }
 }
